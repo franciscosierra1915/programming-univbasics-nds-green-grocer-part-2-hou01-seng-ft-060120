@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
@@ -46,7 +46,7 @@ end
 
 def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
-  binding.pry
+  #binding.pry
   couponed_cart = apply_coupons(consolidate_cart, coupons)
   final_cart = apply_clearance(couponed_cart)
   total = 0 
